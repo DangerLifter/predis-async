@@ -1,5 +1,5 @@
 {
-    "name": "predis/predis-async",
+    "name": "dangerlifter/predis-async",
     "type": "library",
     "description": "Asynchronous version of Predis",
     "keywords": ["nosql", "redis", "predis"],
@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.4.0",
         "predis/predis": "^1.0",
-        "react/event-loop": "~0.4",
+        "react/event-loop": "dev-master",
         "clue/redis-protocol": "~0.3"
     },
     "require-dev": {
@@ -31,5 +31,8 @@
         "branch-alias": {
             "dev-master": "0.3-dev"
         }
+    },
+    "replace": {
+        "predis/predis-async":"0.4.*"
     }
 }
